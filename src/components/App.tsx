@@ -1,14 +1,21 @@
 import * as React from "react";
-import "./../assets/scss/App.scss";
+import { Provider } from 'react-redux';
+import { RouterProvider } from "react-router-dom";
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
 
-import reactLogo from "./../assets/img/react_logo.svg";
+import { store } from "../app/store";
+import { router } from "../app/router";
+import { theme } from "../app/muiTheme"; 
 
-const App = () => (
-  <div className="app">
-    <h1>Hello World!</h1>
-    <p>Foo to the barz</p>
-    <img src={reactLogo} height="480" />
-  </div>
-);
+
+const App = () => <React.StrictMode>
+  <Provider store={store}>
+    <CssBaseline />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  </Provider>
+</React.StrictMode>
 
 export default App;
