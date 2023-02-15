@@ -1,7 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import Homepage from "../components/pages/Homepage";
-import Topicpage from "../components/pages/Topicpage"; 
-import NotFound from "../components/pages/NotFound";
+import Homepage from "../components/home/Homepage";
+import Topicpage from "../components/topic/Topicpage"; 
+import Cardspage from "../components/card/Cardspage";
+import Settingspage from "../components/setting/SettingsPage";
+import Playpage from "../components/play/Playpage";
+import NotFound from "../components/common/NotFound";
 
 export const router = createBrowserRouter([
 	{
@@ -11,6 +14,18 @@ export const router = createBrowserRouter([
 	{
 		path: "/topic",
 		element: <Topicpage />
+	},
+	{
+		path: "/cards",
+		element: <Cardspage />
+	},
+	{
+		path: "/settings",
+		element: <Settingspage />
+	},
+	{
+		path: "/play",
+		element: <Playpage />
 	},
 	{
 		path: '*',

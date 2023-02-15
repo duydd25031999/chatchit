@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router-dom";
 
 import { store } from "../app/store";
 import { router } from "../app/router";
-import DefaultLayout from "../components/layouts/DefaultLayout"
+import DefaultLayout from "./common/DefaultLayout"
 
 import '../assets/scss/global.scss';
 
