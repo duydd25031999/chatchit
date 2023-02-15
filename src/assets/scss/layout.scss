@@ -1,0 +1,29 @@
+@import "variable";
+
+.layout {
+	&--default {
+		min-height: 100vh;
+
+		.layout__wrapper {
+			min-height: 100vh;
+
+			@media (min-width: $md) {
+				min-height: 70vh;
+			}
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__container {
+		width: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		border: 1px solid black;
+	}
+}

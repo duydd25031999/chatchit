@@ -15,17 +15,22 @@ module.exports = {
         use: ["babel-loader"],
         exclude: /node_modules/,
       },
+      // {
+      //   test: /\.css$/,
+      //   use: ["style-loader", "css-loader"],
+      // },
+      // {
+      //   test: /\.(scss|sass)$/,
+      //   use: ["style-loader", "css-loader", "sass-loader"],
+      // },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.(scss|sass)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        // Extract any CSS or SCSS content and minimize
+        test: /\.[s]?css$/,
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
-       type: "asset/resource",
+        type: "asset/resource",
       },
     ],
   },
