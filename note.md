@@ -104,6 +104,18 @@
 
 ### `(Z)` - Tới câu tiếp theo 
 
-# Todo List
+# Lưu ý
 
-1. Setup Redux Saga
+1. Mình quá chú tâm vào việc làm sao để nó đẹp mà quên mất
+1. Mình có kinh nghiệm tự làm design đâu mà cố gắng
+1. Bây giờ thích làm
+1. Thì cố gắng đảm bảo luồng hoạt động trước
+1. Dù nó có xấu tậm xấu tệ thì cũng được
+1. Cứ làm nó chạy được đã
+1. Update UI dần dần
+1. Đừng expect nó sẽ đẹp nữa
+----
+1. Chạy được đã
+1. Giống 1 web cơ bản
+1. Sau đó tính tiếp ....
+1. Còn lâu nữa - never - tới mức tưởng tượng

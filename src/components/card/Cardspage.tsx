@@ -1,3 +1,7 @@
-const Cardspage = () => (<h1>This is Cards page</h1>);
+import CardsFilter from "./CardsFilter";
+
+const Cardspage = () => (<div>
+    <CardsFilter />
+</div>);
 
 export default Cardspage;

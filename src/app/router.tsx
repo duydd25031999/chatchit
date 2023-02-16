@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Homepage from "../components/home/Homepage";
 import Topicpage from "../components/topic/Topicpage"; 
 import Cardspage from "../components/card/Cardspage";
-import Settingspage from "../components/setting/SettingsPage";
+import Settingspage from "../components/setting/Settingspage";
 import Playpage from "../components/play/Playpage";
 import NotFound from "../components/common/NotFound";
 

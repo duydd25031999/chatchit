@@ -5,10 +5,10 @@ interface IDefaultLayout {
 }
 
 const DefaultLayout = ({ children }: IDefaultLayout) => (
-	<div className="w-full flex justify-center items-center bg-indigo-700 text-zinc-300 layout--default">
+	<div className="w-full flex justify-center items-center layout--default">
 		<div className="w-full md:w-1/2 layout__wrapper">
 			&nbsp;
-			<div className="layout__container flex p-4 bg-indigo-700">
+			<div className="layout__container flex p-4">
 				{children}
 			</div>
 		</div>
